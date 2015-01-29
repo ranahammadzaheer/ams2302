@@ -34,10 +34,8 @@
 
 int main(void)
 {
-	DDR_SENSOR &= ~(1 << SENSOR); // define as input
+	am2302_init();
 	DDR_LED |= (1 << LED); // define as output
-
-	PORT_SENSOR &= ~(1 << SENSOR);  // disable pullup
 
 	led_off;
 
@@ -51,9 +49,10 @@ int main(void)
 		uint16_t humidity = 0;
 		uint16_t temp = 0;
 
+		// turn led on at measurement
 		led_on;
 
-		uint8_t error = am2302(&humidity, &temp);
+		uint8_t error = am2302(&humidity, &temp); // get data from am2302
 		if (!error)
 		{
 			printf("%i,%i%% %i,%iC" CR, humidity/10, humidity%10, temp/10, temp%10);
@@ -63,8 +62,10 @@ int main(void)
 			printf("Error %i" CR, error);
 		}
 
+		// turn led off;
 		led_off;
 		
+		// wait one second
 		_delay_ms(1000);
 	}
 

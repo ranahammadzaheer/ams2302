@@ -26,7 +26,7 @@
 
 
 uint8_t am2302(uint16_t *humidity, uint16_t *temp);
-
+inline void am2302_init(void);
 
 
 #endif /* AM2302_H_ */
