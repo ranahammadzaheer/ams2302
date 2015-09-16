@@ -1,6 +1,6 @@
 Created on: 13.03.2013
 Author: Pascal Gollor
-web: http://www.pgollor.de
+web: http://www.pgollor.de/cms/
 
 Dieses Werk ist unter einer Creative Commons Lizenz vom Typ
 Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 3.0 Deutschland zugänglich.
@@ -13,14 +13,5 @@ brieflich an Creative Commons, 444 Castro Street, Suite 900, Mountain View, Cali
 Ich uebernehme keinerlei Haftung fuer Schaeden die durch die Nutzung dieser Software enstehen.
 ----- WICHTIG!!! -----
 
-
-
--- Installation
-
-Die Makefile ist von Eclipse unter Debian generiert worden.
-Zum flashen einfach in den Ordner Release wechseln und folgendes ausfuehren:
-- make
-- make flash
-
-Vorsicht! Die Frequenz ist auf 8 MHz eingestellt und auch nur damit getestet worden.
-Die Fusebits werden allerdings nicht durch das Makefile gesetzt.
+----- Bibliotheken -----
+Uart und Fifo stammen aus einer externen Quelle. Genauere Informationen können den Dateien dazu entnommen werden.
