@@ -12,3 +12,6 @@ brieflich an Creative Commons, 444 Castro Street, Suite 900, Mountain View, Cali
 ----- WICHTIG!!! -----
 Ich uebernehme keinerlei Haftung fuer Schaeden die durch die Nutzung dieser Software enstehen.
 ----- WICHTIG!!! -----
+
+----- Bibliotheken -----
+Uart und Fifo stammen aus einer externen Quelle. Genauere Informationen können den Dateien dazu entnommen werden.
